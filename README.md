@@ -18,3 +18,16 @@ kubectl -n monitoring create secrets generic etcd-certs --from-file=/etc/kuberne
   - etcd-certs
 ...
 ```
+
+## etcd grafana dashboard
+
+Grafana dashboard：
+- https://grafana.com/grafana/dashboards/9733
+- https://grafana.com/grafana/dashboards/3070
+- https://grafana.com/grafana/dashboards/10859
+- https://grafana.com/grafana/dashboards/10323
+
+官方提供dashboard：
+- https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/monitoring.md
+- https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/grafana.json
+这里有一个坑，导入grafana前需要将前两行及后最一行括号的去掉
