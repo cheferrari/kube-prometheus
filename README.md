@@ -10,7 +10,7 @@
 ### 4.Prometheus add etcd secrets
 ```
 # kubeadm cluster use this cmd to create etcd secrets 
-kubectl -n monitoring create secrets generic etcd-certs --from-file=/etc/kubernetes/pki/etcd/healthcheck-client.crt --from-file=/etc/kubernetes/pki/etcd/healthcheck-client.key --from-file=/etc/kubernetes/pki/etcd/ca.crt
+kubectl -n monitoring create secret generic etcd-certs --from-file=/etc/kubernetes/pki/etcd/healthcheck-client.crt --from-file=/etc/kubernetes/pki/etcd/healthcheck-client.key --from-file=/etc/kubernetes/pki/etcd/ca.crt
 
 # prometheus-prometheus.yaml
 ...
